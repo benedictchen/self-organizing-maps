@@ -5,7 +5,7 @@
 **[💳 DONATE VIA PAYPAL - CLICK HERE](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXQKYYKPHWXHS)**
 
 [![CI](https://github.com/benedictchen/self-organizing-maps/workflows/CI/badge.svg)](https://github.com/benedictchen/self-organizing-maps/actions)
-[![PyPI version](https://badge.fury.io/py/self-organizing-maps.svg)](https://badge.fury.io/py/self-organizing-maps)
+[![PyPI version](https://badge.fury.io/py/self_organizing_maps.svg)](https://badge.fury.io/py/self_organizing_maps)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-Custom%20Non--Commercial-red.svg)](LICENSE)
 
@@ -20,7 +20,7 @@
 ## 📦 Installation
 
 ```bash
-pip install self-organizing-maps
+pip install self_organizing_maps
 ```
 
 ## 🚀 Quick Start
