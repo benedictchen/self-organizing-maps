@@ -13,9 +13,9 @@
 
 # Self-Organizing Maps
 
-🌟 Unsupervised topological learning preserving neighborhood relationships, modeling biological cortical organization
+🗺️ Unsupervised learning and visualization
 
-**Kohonen, T. (1982)** - "Self-Organized Formation of Topologically Correct Feature Maps"
+**Kohonen, T. (1982) - "Self-organized formation of topologically correct feature maps"**
 
 ## 📦 Installation
 
@@ -23,11 +23,32 @@
 pip install self-organizing-maps
 ```
 
+## 🚀 Quick Start
+
+```python
+import self_organizing_maps
+
+# Example usage
+print("✅ Self-Organizing Maps loaded successfully!")
+```
+
 ## 🎓 About the Implementation
 
 Implemented by **Benedict Chen** - bringing foundational AI research to modern Python.
 
 📧 Contact: benedict@benedictchen.com
+
+## 📖 Citation
+
+If you use this implementation in your research, please cite the original paper:
+
+```bibtex
+Kohonen, T. (1982) - "Self-organized formation of topologically correct feature maps"
+```
+
+## 📜 License
+
+Custom Non-Commercial License with Donation Requirements - See LICENSE file for details.
 
 ---
 
