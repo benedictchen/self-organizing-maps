@@ -27,9 +27,29 @@ pip install self-organizing-maps
 
 ```python
 import self_organizing_maps
+import numpy as np
 
-# Example usage
-print("✅ Self-Organizing Maps loaded successfully!")
+# Create sample 2D data
+data = np.random.randn(500, 3)
+
+# Create SOM
+som = self_organizing_maps.SelfOrganizingMap(
+    map_size=(10, 10),
+    input_dim=3,
+    learning_rate=0.5
+)
+
+# Train the SOM
+som.train(data, epochs=100)
+
+# Find best matching unit for new data
+test_point = np.random.randn(3)
+winner = som.find_winner(test_point)
+print(f"✅ Best matching unit: {winner}")
+
+# Visualize with built-in tools
+visualizer = self_organizing_maps.SOMVisualizer(som)
+visualizer.plot_map()
 ```
 
 ## 🎓 About the Implementation
