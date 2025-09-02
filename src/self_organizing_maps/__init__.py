@@ -84,10 +84,14 @@ __version__ = '2.0.0'
 __author__ = 'Benedict Chen'
 __email__ = 'benedict@benedictchen.com'
 
+# Create backward-compatible aliases
+SOM = SelfOrganizingMap  # Primary alias that users expect
+
 # Public API - what gets imported with "from self_organizing_maps import *"
 __all__ = [
     # Main classes (most users will only need these)
     'SelfOrganizingMap',
+    'SOM',  # Common abbreviation
     'ModularSelfOrganizingMap',
     
     # Advanced components
