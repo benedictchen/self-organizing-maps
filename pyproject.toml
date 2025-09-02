@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "self-organizing-maps"
-version = "1.1.0"
+version = "1.1.1"
 description = "Kohonen Self-Organizing Maps for unsupervised learning and visualization"
 readme = "README.md"
 license = {text = "Custom Non-Commercial License with Donation Requirements"}
