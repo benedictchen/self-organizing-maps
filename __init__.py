@@ -17,10 +17,18 @@ def _print_attribution():
         print("   benedict@benedictchen.com")
         print("   Support: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WXQKYYKPHWXHS")
 
-from .self_organizing_map import SelfOrganizingMap, SOMNeuron
-from .growing_som import GrowingSelfOrganizingMap
-from .hierarchical_som import HierarchicalSOM
-from .visualization import SOMVisualizer
+# Import from src layout structure
+try:
+    from .src.self_organizing_maps import *
+except ImportError:
+    # Fallback to flat layout files if src import fails
+    try:
+        from .self_organizing_map import SelfOrganizingMap, SOMNeuron
+        from .growing_som import GrowingSelfOrganizingMap
+        from .hierarchical_som import HierarchicalSOM
+        from .visualization import SOMVisualizer
+    except ImportError:
+        print("Warning: Could not import Self-Organizing Maps components")
 
 # Show attribution on library import
 _print_attribution()
