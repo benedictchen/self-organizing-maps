@@ -16,7 +16,6 @@ matplotlib.use('Agg')  # Use non-interactive backend
 sys.path.insert(0, os.path.dirname(__file__))
 from self_organizing_map import SelfOrganizingMap as OriginalSOM
 
-# Import modular implementation  
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'self_organizing_maps'))
 from self_organizing_maps import SelfOrganizingMap as ModularSOM
 
@@ -51,7 +50,7 @@ def compare_basic_training():
     }
     
     # Original implementation
-    print("📊 Original Implementation:")
+    print("Original Implementation:")
     np.random.seed(42)
     original_som = OriginalSOM(**config)
     start_time = time.time()
@@ -62,7 +61,6 @@ def compare_basic_training():
     print(f"   Final QE: {original_results['final_quantization_error']:.4f}")
     print(f"   Final TE: {original_results['final_topographic_error']:.4f}")
     
-    # Modular implementation
     print("\n🧩 Modular Implementation:")
     np.random.seed(42)
     modular_som = ModularSOM(**config)
@@ -142,7 +140,7 @@ def compare_weight_initialization():
 
 def compare_bmu_finding():
     """Compare BMU finding between implementations"""
-    print("\n🎯 Comparing BMU Finding")
+    print("\nComparing BMU Finding")
     print("=" * 50)
     
     data = create_test_data()[:100]  # Use smaller dataset for detailed comparison
@@ -248,7 +246,7 @@ def run_comparison():
             import traceback
             traceback.print_exc()
     
-    print(f"\n🎯 Comparison Results")
+    print(f"\nComparison Results")
     print("=" * 50)
     print(f"Tests passed: {passed_tests}/{total_tests}")
     print(f"Compatibility: {passed_tests/total_tests*100:.1f}%")

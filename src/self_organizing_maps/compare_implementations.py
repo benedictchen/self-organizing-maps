@@ -20,7 +20,6 @@ except ImportError:
     sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../../'))
     from self_organizing_map import SelfOrganizingMap as OriginalSOM
 
-# Import modular implementation from current package
 try:
     from . import SelfOrganizingMap as ModularSOM
 except ImportError:
@@ -68,7 +67,6 @@ def compare_basic_training():
     print(f"   Final QE: {original_results['final_quantization_error']:.4f}")
     print(f"   Final TE: {original_results['final_topographic_error']:.4f}")
     
-    # Modular implementation
     print("\n🧩 Modular Implementation:")
     np.random.seed(42)
     modular_som = ModularSOM(**config)
