@@ -20,7 +20,7 @@
 
 🧠 **Kohonen's Self-Organizing Maps for unsupervised topological data visualization and clustering**
 
-Self-Organizing Maps (SOMs) create low-dimensional representations of high-dimensional data while preserving topological relationships. This implementation provides research-accurate reproductions of Teuvo Kohonen's groundbreaking neural network architecture that revolutionized unsupervised learning and data visualization.
+Self-Organizing Maps (SOMs) create low-dimensional representations of high-dimensional data while preserving topological relationships. This implementation provides research-accurate reproductions of Teuvo Kohonen's neural network architecture for unsupervised learning and data visualization.
 
 **Research Foundation**: Kohonen, T. (1982) - *"Self-Organized Formation of Topologically Correct Feature Maps"*
 
